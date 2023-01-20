@@ -1,0 +1,205 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+        "title": "API de libreria",
+        "version": "1.0"
+    },
+    "paths": {
+        "/api/login": {
+            "post": {
+                "summary": "Login",
+                "operationId": "a3b306d14572d1f4bd6c064b3233e7b8",
+                "responses": {
+                    "200": {
+                        "description": "Login"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/register": {
+            "post": {
+                "summary": "Register",
+                "operationId": "8a56853624e025573120a09a4c75d468",
+                "responses": {
+                    "200": {
+                        "description": "Register"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/logout": {
+            "post": {
+                "summary": "logout",
+                "operationId": "fe8f3429cd6979b3b4517e186505f9f9",
+                "responses": {
+                    "200": {
+                        "description": "logout"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/order/{order}/products/{product}/order": {
+            "post": {
+                "summary": "Realizar una compra por el usuario que inicio sesion",
+                "operationId": "7db425ec115f1b45f1eae930a30d995f",
+                "responses": {
+                    "200": {
+                        "description": "Realizar una compra por el usuario que inicio sesion"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/orders/{id}/delete": {
+            "delete": {
+                "summary": "Eliminar una orden por id y por el admin",
+                "operationId": "fa3907de67028037f9e23d2cff12701e",
+                "responses": {
+                    "200": {
+                        "description": "Eliminar una orden por el admin"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/orders/{id}/update": {
+            "put": {
+                "summary": "Actualizar una orden por admin",
+                "operationId": "31c74d59a55e1dc111ea1e6c45a62fd1",
+                "responses": {
+                    "200": {
+                        "description": "actualizar una orden por el admin"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/product": {
+            "post": {
+                "summary": "Guardar una Producto por el admin",
+                "operationId": "1d0b0d8724685b7b8f9d87f403bfc4df",
+                "responses": {
+                    "200": {
+                        "description": "Guardar una Producto"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/products": {
+            "get": {
+                "summary": "Mostrar todos los productos",
+                "operationId": "1bfaa78d1c2c3848ab8165c5dadcad3e",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar todos los productos sin haber iniciado sesion"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/products/{id}": {
+            "get": {
+                "summary": "Mostrar un producto por id",
+                "operationId": "7ab21ddb713501f3d4c2914892c02a21",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar un productopor id sin haber iniciado sesion"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/products/{id}/delete": {
+            "delete": {
+                "summary": "Eliminar un producto por id",
+                "operationId": "b7b877c7aa0156298632d324409793d8",
+                "responses": {
+                    "200": {
+                        "description": "Eliminar un producto por el admin"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/product/{id}/update": {
+            "put": {
+                "summary": "Actualizar un producto por admin",
+                "operationId": "2e17f419e82023d6261d815f5b9b99d1",
+                "responses": {
+                    "200": {
+                        "description": "Actualizar un producto por el admin"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/productos": {
+            "get": {
+                "summary": "Mostrar los producto paginados",
+                "operationId": "8374b6e7d23e5340f6267d73e6716ba6",
+                "responses": {
+                    "200": {
+                        "description": "Mostrar los producto paginados"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/seller": {
+            "post": {
+                "summary": "Convertirse en usuario vendedor",
+                "operationId": "6613f5d234e1e19b8ff3c63fb3470d18",
+                "responses": {
+                    "200": {
+                        "description": "Convertirse en usuario vendedor"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        },
+        "/api/sellers": {
+            "post": {
+                "summary": "Ver todos los usuarios vendedores por el admin",
+                "operationId": "c47b524763dd90d045336c3ccca9a28e",
+                "responses": {
+                    "200": {
+                        "description": "Ver todos los usuarios vendedores por el admin"
+                    },
+                    "default": {
+                        "description": "Ha ocurrido un error."
+                    }
+                }
+            }
+        }
+    }
+}
